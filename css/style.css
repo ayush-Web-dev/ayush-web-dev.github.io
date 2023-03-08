@@ -474,6 +474,10 @@ tag{
 }
 
 @media (max-width: 640px) {
+  #home{
+    height: 100%;
+    padding: 5rem 0;
+  }
   #about-me .about-sub-head,
   #skills .skills-sub-head,
   #projects .projects-sub-head{
