@@ -24,6 +24,15 @@ html,body{
     background-color: #343a40 !important;
 }
 
+.custom-toggler{
+  background-color: #fff;
+  border-color: #000;
+}
+
+.custom-toggler:focus{
+  box-shadow: none;
+}
+ 
 #logo{
     font-size: 40px;
     font-weight: 700;
@@ -478,6 +487,9 @@ tag{
   }
   #skills .skill-name{
     font-size: 19px;
+  }
+  .about-text{
+    padding: 0 1rem;
   }
 }
   
