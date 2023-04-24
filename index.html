@@ -18,8 +18,8 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/card.css">
-    <!-- <link rel="stylesheet" href="./css/projects.css"> -->
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/projects.css">
 
     <link href='https://fonts.googleapis.com/css?family=Kaushan Script' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
@@ -34,12 +34,12 @@
     <div class="container-fluid px-0">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
-            <button class="navbar-toggler custom-toggler my-2" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a id="logo" class="navbar-brand px-lg-5 mx-xl-5" href="#">Ayush</a>
+                <a id="logo" class="navbar-brand px-lg-5 mx-lg-5" href="#">Ayush</a>
 
                 <ul class="navbar-nav text-uppercase ms-auto me-4">
                     <li class="nav-item active">
@@ -57,39 +57,43 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li> -->
                 </ul>
             </div>
         </nav>
 
-        <div id="home" class="nav-section align-items-center d-flex justify-content-center">
-            <div class="container">
+        <div id="home" class="nav-section">
+            <div class="container align-items-center my-auto">
                 <div class="row justify-content-center">
-                    <div class="col-lg-9 text-center text-dark">
+                    <div class="col-lg-8 text-center text-dark">
                         <p class="sub-head text-uppercase text-grey-500">Welcome to my portfolio!! </p>
-                        <h1 class="main-head text-gray text-center"> <b> Hi, I'm <span class="name"> Ayush</span> </b></h1>
-                        <h1 class="fancy main-head text-grey">Designer, FullStack Developer &amp; CS Engineer</h1>
+                        <h1 class="main-head text-gray text-center"> <b> Hi, I'm <span style="color:#5651e5;"> Ayush</span> </b>
+                        </h1>
+                        <h1 class="main-head text-grey typewriter">A Fullstack Web Developer</h1>
                         <p class="sub-head text-gray-500 mx-auto">I'm focused on building responsive web applications by
                             integrating with back-end technologies.</p>
-                        <p class="sub-head2 text-uppercase text-center"> <span> <a href="#contact" class="cont"> Let's build something together </a> </span> </p>
+                        <p class="sub-head2 text-uppercase text-center"> <span> Let's build something together </span> </p>
                     </div>
                 </div>
             </div>
         </div>
 
         <div id="about-me" class="nav-section">
-            <div class="container py-lg-5">
-                <div class="row py-lg-5 d-flex">
+            <div class="container py-5">
+                <div class="row py-5 d-flex">
                     <div class="col-lg-8">
                         <p class="about-sub-head my-0">ABOUT</p>
                         <p class="about-main-head">Who I Am</p>
-                        <p class="about-text">I specialize in building responsive web applications that connect with API's and other
+                        <p>I specialize in building responsive web applications that connect with API's and other
                             backend technologies. I'm passionate about learning new technologies and understand there is
                             more than one way to accomplish a task. Though I am most proficient in building front-end
                             applications using HTML, CSS, and Javascript, I have familiarized myself with backend
                             development using PHP and Node. I am a quick learner and can pick up new tech
                             stacks as needed. I believe that being a great developer is not using one specific language,
                             but choosing the best tool for the job.</p>
-                        <p class="about-text">I started my developement journey in 2022 developing various websites and projects during my
+                        <p>I started my developement journey in 2022 developing various websites and projects during my
                             internships. I have experience working on live projects directly with clients and I am
                             enjoying to show my creativity in web designing. In my spare time I would love to spend time
                             with my family and I enjoy listening songs and always exicited to know latest trends in
@@ -114,7 +118,7 @@
                     <p class="skills-main-head">What I Can Do</p>
                 </div>
                 <div class="row d-flex justify-content-between">
-                    <div class="col-xl-3 col-lg-4 col-md-6 justify-content-center d-flex">
+                    <div class="col-md-3 justify-content-center d-flex">
                         <div class="row skill-card align-items-center">
                             <div class="col-6 align-items-center">
                                 <img class="mx-4 align-self-center" src="./images/html.webp" alt="">
@@ -125,7 +129,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-3 col-lg-4 col-md-6 justify-content-center d-flex">
+                    <div class="col-md-3 justify-content-center d-flex">
                         <div class="row skill-card align-items-center">
                             <div class="col-6 align-items-center">
                                 <img class="mx-4 align-self-center" src="./images/css.webp" alt="">
@@ -136,10 +140,10 @@
                         </div>
 
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 justify-content-center d-flex">
+                    <div class="col-md-3 justify-content-center d-flex">
                         <div class="row skill-card align-items-center">
                             <div class="col-5 align-items-center">
-                                <img class="mx-4 align-self-center rounded" src="./images/javascript.webp" alt="">
+                                <img class="mx-4 align-self-center" src="./images/javascript.webp" alt="">
                             </div>
                             <div class="col-7">
                                 <p class="skill-name m-0">JavaScript</p>
@@ -147,10 +151,10 @@
                         </div>
 
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 justify-content-center d-flex">
+                    <div class="col-md-3 justify-content-center d-flex">
                         <div class="row skill-card align-items-center">
                             <div class="col-6 align-items-center">
-                                <img class="mx-4 align-self-center rounded" src="./images/bulma.png" width="60" alt="">
+                                <img class="mx-4 align-self-center" src="./images/bulma.png" width="60" alt="">
                             </div>
                             <div class="col-6">
                                 <p class="skill-name m-0">Bulma</p>
@@ -158,7 +162,7 @@
                         </div>
 
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 justify-content-center d-flex">
+                    <div class="col-md-3 justify-content-center d-flex">
                         <div class="row skill-card align-items-center">
                             <div class="col-5 align-items-center">
                                 <img class="mx-3 align-self-center" src="./images/Bootstrap.png" width="70" alt="">
@@ -169,7 +173,7 @@
                         </div>
 
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 justify-content-center d-flex">
+                    <div class="col-md-3 justify-content-center d-flex">
                         <div class="row skill-card align-items-center">
                             <div class="col-7 align-items-center">
                                 <img class="mx-2 align-self-center" src="./images/php.svg" width="110" alt="">
@@ -180,7 +184,7 @@
                         </div>
 
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 justify-content-center d-flex">
+                    <div class="col-md-3 justify-content-center d-flex">
                         <div class="row skill-card align-items-center">
                             <div class="col-6 align-items-center">
                                 <img class="mx-4 align-self-center" src="./images/laravel.webp" width="60" alt="">
@@ -191,7 +195,7 @@
                         </div>
 
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 justify-content-center d-flex">
+                    <div class="col-md-3 justify-content-center d-flex">
                         <div class="row skill-card align-items-center">
                             <div class="col-6 align-items-center">
                                 <img class="mx-4 align-self-center" src="./images/mysql.webp" width="90" alt="">
@@ -202,10 +206,10 @@
                         </div>
 
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 justify-content-center d-flex">
+                    <div class="col-md-3 justify-content-center d-flex">
                         <div class="row skill-card align-items-center">
                             <div class="col-6 align-items-center">
-                                <img class="mx-4 align-self-center rounded" src="./images/sql.webp" width="90" alt="">
+                                <img class="mx-4 align-self-center" src="./images/sql.webp" width="90" alt="">
                             </div>
                             <div class="col-6">
                                 <p class="skill-name m-0">DBMS</p>
@@ -213,7 +217,7 @@
                         </div>
 
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 justify-content-center d-flex">
+                    <div class="col-md-3 justify-content-center d-flex">
                         <div class="row skill-card align-items-center">
                             <div class="col-6 align-items-center">
                                 <img class="mx-4 align-self-center" src="./images/github1.webp" alt="">
@@ -224,18 +228,7 @@
                         </div>
 
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 justify-content-center d-flex">
-                        <div class="row skill-card align-items-center">
-                            <div class="col-6 align-items-center">
-                                <img class="mx-4 align-self-center rounded" src="./images/tailwind.png" width="60" alt="">
-                            </div>
-                            <div class="col-6">
-                                <p class="skill-name m-0">Tailwind</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 justify-content-center d-flex">
+                    <div class="col-md-3 justify-content-center d-flex">
                         <div class="row skill-card align-items-center">
                             <div class="col-6 align-items-center">
                                 <img class="mx-4 align-self-center" src="./images/figma.png" width="60" alt="">
@@ -251,7 +244,7 @@
         </div>
 
         <section id="card" class="nav-section">
-            <button class="btnKnow">Click To Know Me</button>
+            <button class="btnKnow">Get In Touch</button>
             <button class="btnClose"></button>
             <div class="profile_card-wrapper">
                 <div class="user_img mt-2">
@@ -262,26 +255,6 @@
                     <p class="user_designation">Web Designer, Developer</p>
                     <p class="user_location"><i class="fa-solid fa-location-dot"></i>Himachal Pradesh, India</p>
                 </div>
-                <ul class="user_involvement">
-                    <button id="sweetalert1">
-                        <li class="intern-btn">
-                            <strong class="nmbr">4+</strong>
-                            <strong>Internships</strong>
-                        </li>
-                    </button>
-                    <button id="sweetalert2">
-                        <li>
-                            <strong class="nmbr">6+</strong>
-                            <strong>Projects</strong>
-                        </li>
-                    </button>
-                    <button id="sweetalert3">
-                        <li>
-                            <strong class="nmbr">10+</strong>
-                            <strong>Skills</strong>
-                        </li>
-                    </button>
-                </ul>
                 <ul class="user_social-presence">
                     <li>
                         <a href="https://www.linkedin.com/in/ayush-953745203/" target="_blank" class="facebook">
@@ -309,44 +282,6 @@
                 </div>
             </div>
         </section>
-
-        <div class="nav-section" id="projects">
-            <div class="container-fluid py-lg-5">
-                <div class="row pt-5 mx-lg-4 px-sm-5">
-                    <p class="projects-sub-head my-0">PROJECTS</p>
-                    <p class="projects-main-head my-0">What I've Built</p>
-                </div>
-                <div class="row justify-content-center pt-5">
-                    <div class="col-md-5 project1 me-lg-4 box">
-                        <div class="content d-flex">
-                            <a href="#" target="_blank" class="jobhub-btn">
-                            <div class="content-overlay"></div>
-                            <img src="./images/JobHub.png" width="100%" alt="" class="content-image">
-                            <div class="content-details fadeIn-left">
-                                <h2>JobHub</h2>
-                                <h5>This is built using HTML, CSS, Bootstrap, & JavaScript within Laravel framework.</h5>
-                                <h5 style="color:aqua;">Deploying very soon</h5>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-5 project2 ms-lg-4 box">
-                        <div class="content d-flex">
-                            <a href="https://dentalsupply20230223233846.azurewebsites.net/" target="_blank" class="jobhub-btn">
-                                <div class="content-overlay"></div>
-                                <img src="./images/Dental care.jpg" width="100%" alt="" class="content-image">
-                                <div class="content-details fadeIn-right">
-                                    <h2>I-Dental Care</h2>
-                                    <h5>This is built with HTML, CSS, Bootstrap, JavaScript & C# within .NET framework</h5>
-                                    <h5 style="color:aqua;">Click to view website -></h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
 
         <div id="contact" class="nav-section">
             <div class="container py-5">
@@ -424,27 +359,6 @@
         AOS.init();
     </script>
     <script>
-        document.getElementById('sweetalert1').addEventListener('click', function () {
-            Swal.fire({
-                title: 'Current: Development Logics',
-                text: 'Laravel Developer Intern',
-            })
-        })
-
-        document.getElementById('sweetalert2').addEventListener('click', function () {
-            Swal.fire({
-                title: 'Current: Employee Management System',
-                text: 'Full Stack Project',
-            })
-        })
-
-        document.getElementById('sweetalert3').addEventListener('click', function () {
-            Swal.fire({
-                title: 'Current: MERN Stack',
-                text: 'Website & Projects',
-            })
-        })
-
         document.getElementById('sendMessageButton').addEventListener('click', function () {
             Swal.fire(
                 'Sent',
@@ -461,7 +375,7 @@
 
         function activeMenu(){
             let len = sec.length;
-            while(--len && window.scrollY + 95 < sec[len].offsetTop){}
+            while(--len && window.scrollY + 97 < sec[len].offsetTop){}
             li.forEach(ltx => ltx.classList.remove("active"));
             li[len].classList.add("active");
         }
@@ -477,11 +391,14 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
+
 <script src="jquery/jquery.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
+
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
