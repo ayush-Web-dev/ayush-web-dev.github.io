@@ -1,3 +1,11 @@
+*,
+*:before,
+*:after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 section{
 	height: 670px;
 	font-family: 'Montserrat', sans-serif;
@@ -115,19 +123,6 @@ section.open .btnKnow{
 	transform: translateY(-70%);
 }
 
-  
-@media (max-width: 640px){
-    .profile_card-wrapper{
-		width: 460px;
-		padding-top: 80px;
-		margin-top: 110px;
-	}
-	.user_img{
-		width: 190px;
-		height: 180px;
-	}    
-  }
-
 .user_img img{
 	width: 100%;
 	border: 5px solid #fff;
@@ -174,56 +169,15 @@ section.open .btnKnow{
 	color: #05b0f5;
 }
 
-.user_involvement{
-	padding-left: 0;
-	justify-content: space-around;
-	width: 100%;
-	margin-bottom: 40px;
-	font-size: 20px;
-}
-
-.user_involvement #sweetalert1,
-.user_involvement #sweetalert2,
-.user_involvement #sweetalert3{
-	background-color: transparent;
-	border: none;
-}
-
-.user_involvement li{
-	flex-direction: column;
-	padding: 5px 10px;
-	border-radius: 5px;
-	/* box-shadow: 0 0 3px 3px rgba(0,0,0,.05); */
-}
-
-.user_involvement li:hover > strong{
-	flex-direction: column;
-	color: #3b5998;
-}
-
-.user_involvement li strong{
-	justify-content: center;
-	color: #05b0f5;
-	font-weight: 700;
-}
-
-
-.user_involvement li small{
-	font-size: 12px;
-	color: #bbb;
-	text-transform: lowercase;
-	justify-content: center;
-}
-
 .user_social-presence{
 	width: 100%;
 	justify-content: space-around;
-	margin-bottom: 40px;
+	margin-bottom: 70px;
 }
 
 .user_social-presence li{
-	width: 40px;
-	height: 40px;
+	width: 60px;
+	height: 60px;
 	border-radius: 3px;
 	box-shadow: 0 0 3px 3px rgba(0,0,0,.05);
 	transition: all .35s;
@@ -244,6 +198,10 @@ section.open .btnKnow{
 	overflow: hidden;
 	border-radius: 3px;
 	transition: all .35s;
+}
+
+.user_social-presence li a i{
+	font-size: 1.4rem;
 }
 
 .user_social-presence li:hover a{
@@ -295,14 +253,6 @@ section.open .btnKnow{
 	background: #833ab4;
 }
 
-.pinterest{
-	color: #bd081c;
-}
-
-.user_social-presence li:hover .pinterest:after{
-	background: #bd081c;
-}
-
 .user_contact-btn{
 	width: 100%;
 	justify-content: space-around;
@@ -328,7 +278,7 @@ section.open .btnKnow{
 	text-decoration: none;
 }
 
-.user_contact-btn button:hover{
+.user_contact-btn a:hover{
 	background: #05b0f5;
 	color: #fff;
 	box-shadow: 0 6px 6px rgba(5,176,245,.1);
