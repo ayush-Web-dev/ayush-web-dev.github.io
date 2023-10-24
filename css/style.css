@@ -43,18 +43,23 @@ html,body{
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive !important;
 }
 
-.nav-item .nav-link{
+.nav-item .nav-link,
+.resume-item .nav-link{
     font-size: 18px;
     font-weight: 300;
     color: #fff;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif !important;
 }
 
+.resume-item:hover .nav-link{
+  font-weight: 500 !important;
+  color: #722bf7;
+}
+
 .nav-item:hover .nav-link,
 .active .nav-link{
     font-weight: 500 !important;
     color: #722bf7;
-    /* text-shadow: .5px .5px #000; */
 }
 
 .navbar ul>li{
