@@ -259,7 +259,14 @@ section.open .btnKnow{
 	margin-bottom: 30px;
 }
 
-.user_contact-btn a{
+.user_resume-btn{
+	width: 100%;
+	justify-content: space-around;
+	margin-bottom: 10px;
+}
+
+.user_contact-btn a,
+.user_resume-btn a{
 	width: 200px;
 	height: 45px;
 	border: 2px solid #05b0f5;
@@ -278,7 +285,8 @@ section.open .btnKnow{
 	text-decoration: none;
 }
 
-.user_contact-btn a:hover{
+.user_contact-btn a:hover,
+.user_resume-btn a:hover{
 	background: #05b0f5;
 	color: #fff;
 	box-shadow: 0 6px 6px rgba(5,176,245,.1);

@@ -279,12 +279,12 @@ tag{
     width: 100%;
   }
   
-  .box a h2{
+  .box h2{
     color: #f5e508;
     margin-bottom: 1.5rem;
   }
 
-  .box a h5{
+  .box h5{
     color: #fff;
     margin-bottom: 1.5rem;
   }
@@ -397,10 +397,16 @@ tag{
     border-radius: 4px !important;
 }
 
-#contact input:focus,
-#contact textarea:focus{
+#contact input.invalid-field,
+#contact textarea.invalid-field {
+    border: 2px solid red;
     box-shadow: none !important;
-    border: 2px solid #000;
+}
+
+#contact input:focus.invalid-field,
+#contact textarea:focus.invalid-field {
+    border: 2px solid red;
+    box-shadow: none !important;
 }
 
 #contact input:valid,
@@ -408,31 +414,15 @@ tag{
     box-shadow: 0 0 3px 1px green !important;
 }
 
-#contact input:focus:invalid,
-#contact textarea:focus:invalid {
-    box-shadow: none !important;
-}
-
-#contact input:focus:valid,
-#contact textarea:focus:valid {
-    box-shadow: none !important;
-}
-
-#contact input:invalid ,
-#contact textarea:invalid {
-    box-shadow: 0 0 1px .5px red;
-}
-
-#contact .send-button{
+#contact .send-button {
     transition: .4s;
 }
 
-
-#contact .form-control::placeholder{
+#contact .form-control::placeholder {
     font-weight: 700;
 }
 
-#contact .send-button:hover{
+#contact .send-button:hover {
     background-color: #5651e5 !important;
     transform: scale(1.1);
 }
@@ -441,9 +431,23 @@ tag{
     background-color:#ecf0f3;
 }
 
-#footer .footer-text {
-    font-size: 18px;
-    color: #343a40;
+#footer .footer-text ul li{
+    font-size: 19px;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none; 
+  transition: color 0.3s;
+  margin-right: 20px !important; 
+}
+
+.footer-link:last-child {
+  margin-right: 0;
+}
+
+.footer-link:hover {
+  color: #ffcc00;
 }
 
 @media (max-width: 992px) {
@@ -500,4 +504,25 @@ tag{
 
 ::-webkit-scrollbar{
     display: none;
+}
+
+
+/* Style the tooltip text */
+[title]:hover::after {
+  content: attr(title);
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+[title]:hover::after {
+  opacity: 1;
 }
