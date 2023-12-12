@@ -172,7 +172,7 @@ section.open .btnKnow{
 .user_social-presence{
 	width: 100%;
 	justify-content: space-around;
-	margin-bottom: 70px;
+	margin-bottom: 50px;
 }
 
 .user_social-presence li{
@@ -262,7 +262,7 @@ section.open .btnKnow{
 .user_resume-btn{
 	width: 100%;
 	justify-content: space-around;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 .user_contact-btn a,
